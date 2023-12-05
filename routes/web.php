@@ -5,11 +5,9 @@ use App\Http\Controllers\UpdateController;
 use App\Http\Controllers\PointageController;
 use App\Http\Controllers\SalarierController;
 
-Route::get('/', function () {
-    return view('/');
-});
 
 Route::middleware(['auth'])->group(function () {
+    Route::get('/home', [SalarierController::class, 'index']);
     Route::get('/', [SalarierController::class, 'index']);
     //Salarier
     Route::resource('salarier', SalarierController::class);
