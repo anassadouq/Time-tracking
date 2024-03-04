@@ -77,12 +77,12 @@
                             <form action="{{ route('pointage.destroy', $pointage['id']) }}" method="POST" id="deletepointageForm{{ $pointage['id'] }}">
                                 @csrf
                                 @method('DELETE')
-                                <a href="{{ route('pointage.edit' ,$pointage['id']) }}" class="btn btn-secondary">
+                                <a href="{{ route('pointage.edit' ,$pointage['id']) }}" class="btn btn-secondary mx-2">
                                     <span class="material-symbols-outlined">edit</span>                                
-                                Modifier</a>
+                                </a>
                                 <button type="button" class="btn btn-danger" onclick="confirmDeletepointage('{{ $pointage['id'] }}')">
                                     <span class="material-symbols-outlined">delete</span>
-                                Supprimer</button>
+                                </button>
                             </form>
                         </td>
                     </tr>

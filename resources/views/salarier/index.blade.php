@@ -71,10 +71,10 @@
                                 @method('DELETE')
                                 <a href="{{ route('salarier.edit' ,$salarier->id) }}" class="btn btn-secondary">
                                     <span class="material-symbols-outlined">edit</span>     
-                                Modifier</a>
+                                </a>
                                 <button type="button" class="btn btn-danger mx-3" onclick="confirmDeleteSalarier('{{ $salarier->id }}')">
                                     <span class="material-symbols-outlined">delete</span>
-                                Supprimer</button>
+                                </button>
                             </form>
                         </td>
                     </tr>
