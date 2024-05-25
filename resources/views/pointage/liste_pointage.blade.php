@@ -72,7 +72,7 @@
                     @foreach ($salariers as $salarier)
                         @if($salarier->active =="Oui")
                             <tr>
-                                <td class="nom-salarier">
+                                <td class="nom-salarier" width="8%">
                                     {{ $salarier->prenom }} {{ $salarier->nom }}<br>
                                     <span class="salaire">{{ $salarier->salaire }} DH/jrs</span><br>
                                     {{ ($salarier->salaire) / 8 }} DH/h
